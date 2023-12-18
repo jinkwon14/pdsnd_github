@@ -3,7 +3,6 @@ import pandas as pd
 import calendar # pull in calendar months and corresponding numeric months
 pd.set_option('max_columns', None)
 
-
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -37,7 +36,6 @@ def convert(time):
     output_str = result_string + f" {minutes} minutes {seconds} seconds"
      
     return output_str
-
 
 def get_filters():
     """
@@ -83,9 +81,6 @@ def get_filters():
     print('-'*40)
     return city.lower(), month.lower(), day_of_week.lower()
 
-
-
-
 def load_data(city, month, day_of_week):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -127,8 +122,6 @@ def display_sample_data(df):
             additional = ' additional'
         else: 
             print(f"{is_display} is not a valid input.")
-        
-
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -150,16 +143,12 @@ def time_stats(df):
     # display the most common start hour
     df['start_hr'] = df['start_time'].dt.hour
     most_common_hr = df['start_hr'].value_counts().idxmax()
-
-    
+  
     print(f"Most Popular Month is       {most_common_mo}")
     print(f"Most Popular Day of Week is {most_common_dow}")
     print(f"Most Popular Start Hour is  {most_common_hr}")
     print("\nThis took %s seconds." % round((time.time() - start_time), 5))
     print('='*30)    
-
-    
-    
     
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -184,9 +173,6 @@ def station_stats(df):
     print("\nThis took %s seconds." % round((time.time() - start_time), 5))
     print('='*30)  
     
-    
-    
-    
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
     print('\n\n' + '='*30)    
@@ -206,9 +192,6 @@ def trip_duration_stats(df):
     
     print("\nThis took %s seconds." % round((time.time() - start_time), 5))
     print('='*30)
-
-
-
 
 def user_stats(df, city):
     """Displays statistics on bikeshare users."""
@@ -253,7 +236,6 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % round((time.time() - start_time), 5))
     print('='*30)
 
-
 def main():
     while True:
         city, month, day = get_filters()
@@ -273,7 +255,6 @@ def main():
             else: 
                 print(f"{restart} is not a valid selection.")
                 continue
-
                 
 if __name__ == "__main__":
 	main()

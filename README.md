@@ -2,7 +2,7 @@
 ### Author: Jin Kwon 
 ### Date Created: 2023-12-18 
 
-### US Bikeshare Data Analysis
+### US Bikeshare Data Analysis (project URL: [Udacity Proamming for Data Science in Python](https://learn.udacity.com/nanodegrees/nd104))
 
 ### Description
 This project is designed to explore and analyze bikeshare data from three major cities in the United States: Chicago, New York City, and Washington. The Python script allows users to filter the data by city, month, and day of the week to uncover various statistics. It provides insights into travel times, station popularity, user demographics, and other aspects of bikeshare usage. The script employs Pandas and NumPy libraries for data manipulation and analysis.

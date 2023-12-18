@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 import calendar # pull in calendar months and corresponding numeric months
 pd.set_option('max_columns', None)
 

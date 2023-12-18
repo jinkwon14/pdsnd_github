@@ -23,6 +23,10 @@ The script includes the following functions:
 
 ### How to Run
 Ensure you have Python 3.x installed along with Pandas and NumPy libraries. Run the script in a terminal or command prompt and follow the interactive prompts to analyze the bikeshare data.
+```sh
+# in terminal of your choice
+python bikeshare.py
+```
 
 ### Credits
 This project was inspired by Udacity's Programming for Data Science with Python Nanodegree. Additional references and resources used in the development of this project include:

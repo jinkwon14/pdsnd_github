@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 import calendar # pull in calendar months and corresponding numeric months
 pd.set_option('max_columns', None)
 
@@ -182,7 +181,6 @@ def station_stats(df):
     print(f"Most Popular Start Station is {common_start_station}")
     print(f"Most Popular End Station is {common_end_station}")
     print(f"Most Popular Start - End Station Pair is {common_start_station_pair} - {common_end_station_pair}")
-    
     print("\nThis took %s seconds." % round((time.time() - start_time), 5))
     print('='*30)  
     
